@@ -23,11 +23,7 @@ authRouter.post(
   asyncHandler(loginController)
 );
 
-authRouter.get(
-  "/me",
-  validateBody(loginBodySchema),
-  asyncHandler(meController)
-);
+authRouter.get("/me", asyncHandler(meController));
 
 authRouter.delete("/logout", asyncHandler(logoutController));
 
