@@ -23,7 +23,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: chat_app
+      POSTGRES_DB: url_shortener
     volumes:
       - postgres-data:/var/lib/postgresql/data
     ports:
